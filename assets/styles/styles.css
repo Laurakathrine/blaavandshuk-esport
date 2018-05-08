@@ -165,6 +165,7 @@ input {
   width: 100%;
   background-size: cover;
   background-image: url(../images/landingpage2.jpg);
+  background-attachment: fixed;
   color: #fff;
   font-family: 'ff-tisa-sans-web-pro';
   flex-direction: column;
@@ -176,6 +177,7 @@ input {
   align-items: center;
   flex-direction: column;
   width: 700px;
+  font-size: 15pt;
 }
 
 .button {
