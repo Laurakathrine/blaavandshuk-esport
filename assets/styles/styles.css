@@ -76,7 +76,6 @@ nav li {
   #navbar {
   display: flex;
   list-style-type: none;
-  font-family: 'Inconsolata', monospace;
   width: 100%;
   justify-content: center;
   align-items: center;
