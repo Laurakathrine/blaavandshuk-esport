@@ -160,7 +160,7 @@ input {
   background-color: white;
 }
 
-/* Landingpage*/
+/*Landingpage*/
 .landingpage {
   display: flex;
   min-height: 100vh;
@@ -175,6 +175,8 @@ input {
   color: #fff;
 
 }
+
+/*Floating arrow*/
 
 #arrow {
   display: flex;
@@ -229,6 +231,7 @@ input {
   font-size: 15pt;
 }
 
+/*Button*/
 .button {
   padding: 10px 24px;
   background-color: #009b8a;
@@ -251,19 +254,7 @@ input {
   color: #fff;
 }
 
-/*Circle for logo*/
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #000;
-  padding: 20px; 
-  width: 400px;
-  height: 400px;
-  margin-bottom: 150px;
-}
-
+/*Textbox on landingpage*/
 #textbox {
   display: flex;
   justify-content: center;
@@ -383,5 +374,27 @@ input {
 }
 
 
+/*Pricing section*/
+#pricingsection {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: purple;
+  
+}
 
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 900px;
+  background-color: yellow;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.pricing {
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+}
