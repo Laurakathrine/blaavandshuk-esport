@@ -11,7 +11,7 @@
   </head>
   <body>
 <main>
-  <section class="landingpage">
+  <section id="facilityinfo">
     <header>
       <nav>
         <div id="navbar">
@@ -23,7 +23,19 @@
               <div>
             <ul>
               <li><a href="facilities.html">Facilities</a></li>
-              <li><a href="info.html">Practical info</a></li>
+              <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">
+            <a href="info.html">Information</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+          <a href="account.html">What is E-sports?</a>
+          <a href="support.html">Pricing</a>
+          <a href="index.html">Bootcamp</a>
+          <a href="index.html">Transportation</a>
+          <a href="index.html">The town</a>
+        </div>
+      </div>
               <li><a href="aboutus.html">About us</a></li>
               <li>
                 <div class="topnav">
@@ -36,25 +48,37 @@
       
       </nav>
     </header>
-
-  <div id="textbox">  
-    <img src="assets/images/textbox.png">
-      <div id="heading">
-        <h1>Blaavandshuk <br> sportscenter</h1>
-        <p>A complete bootcamp experience <br> for your e-sports team</p>
-      </div>
-  </div>
-  <div id="arrow">
-    <img src="assets/images/arrowyellow.png">
-  </div>
-</section>
-<section class="landingpagescroll"> 
-  <div id="description">
-    <h2>About our center</h2>
-    <p>We're a unique sports center located in Oksbøl on thw west coast of Jutland. Sorrounded by nature, our sport center has many different facilities, such as a state-of-the-art e-sport center, gym and swimming facility. After 20 years in the business, we're confident that we can offer you a complete experience, including accomodation and food.</p>
-  </div>
+<div id="infocontentcenter">
+  <h1>Boost the performance of your e-sports team</h1>
+  <h3>To be the best in the highly competitive world e-sports requires an environment that allows you to focus on the game</h3>
   <div class="button">
-    <a href="aboutus.html">Learn more</a>
-  </div>
+      <a href="aboutus.html">Learn more</a>
+    </div>
+</div>
 </section>
+<section id="facilityinfotwo">
+  <div id="infocontentright">
+    <h2>Proffesional bootcamps</h2>
+    <p>We offer a variety of bootcmps for you and your team which include your own training room with the gaming PCs, acces to the rest of our facility and options for accomodation. </p>
+    <p>Additionally, we offer coaches specialized in the biggest</p>
+    <div class="button">
+      <a href="aboutus.html">Learn more</a>
+    </div>
+</div>
+ 
+</section>
+<section id="facilityinfothree">
+  <div id="infocontentleft">
+    <h2>High end equipment</h2>
+    <p>To become the best, you can't compromise on your gear. That's why all our PCs are equipped with the latest technology for maximum performance and minimum hassle.</p>
+  <p>Additionally, we offer coaches specialized in the biggest</p>
+  <u>
+    <li>Insert spec here</li>
+    <li>Insert spec here</li>
+    <li>Insert spec here</li>
+  </u>
+</div>
+</section>
+
+
 </body>
