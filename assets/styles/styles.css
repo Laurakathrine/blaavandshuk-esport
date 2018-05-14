@@ -236,6 +236,8 @@ input {
   padding: 10px 24px;
   background-color: #009b8a;
   box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+  color: #fff;
 }
 
 .button a:link {
@@ -252,6 +254,10 @@ input {
 
 .button a:active {
   color: #fff;
+}
+
+.button {
+  margin-bottom: 80px;
 }
 
 /*Textbox on landingpage*/
@@ -390,9 +396,7 @@ input {
 .wrapper, .wrapperprice {
   display: flex;
   height: 90vh;
-  width: 900px;
-  background-color: yellow;
-  
+  width: 900px; 
 }
 
 .wrapper {
@@ -406,20 +410,34 @@ input {
   justify-content: center;
 }
 
-.pricing {
-  background-color: orange;
-  height: 350px;
-  width: 450px;
-}
-
 .pricingheading {
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   display: flex;
   width: 900px;
-  height: 200px;
-  background-color: blue;
+  height: 300px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
+.pricing {
+  height: 350px;
+  width: 450px;
+  color: #fff;
+}
+
+.pricing p {
+  margin-top: -20px;
+}
+
+.pricing li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.buttondivpricing {
+  margin-top: 60px;
+}
 
 /*Transportation*/
 
