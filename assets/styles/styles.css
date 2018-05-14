@@ -28,7 +28,7 @@ nav li {
   justify-content: center;
   align-items: center;
   height: 60px;
-  background-image: url(../images/landingpage2.jpg);
+  /*background-image: url(../images/landingpage2.jpg);*/
   /*background-image: url(../images/invisible70.png);*/
   flex-direction: row;
   position: fixed;
@@ -36,6 +36,11 @@ nav li {
   left: 0;
   padding: 0;
   margin: 0;
+}
+
+.border {
+  border: solid;
+  border-color: red;
 }
 
 #navbar ul {
@@ -388,7 +393,7 @@ input {
   height: 100vh;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/landingpage2.jpg);
+  background-image: url(../images/facilities3.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
