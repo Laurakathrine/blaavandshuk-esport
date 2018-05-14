@@ -259,8 +259,8 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
-  width: 800px;
+  height: 600px;
+  width: 600px;
 
 }
 
@@ -375,49 +375,53 @@ input {
 
 
 /*Pricing section*/
-#pricingsection {
+.pricingsection {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: purple;
   flex-direction: column;
   background-image: url(../images/landingpage2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.wrapper {
+.wrapper, .wrapperprice {
   display: flex;
-  justify-content: center;
   height: 90vh;
   width: 900px;
+  background-color: yellow;
+  
+}
 
+.wrapper {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapperprice {
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pricing {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 400px;
-  height: 400px;
   background-color: orange;
-  color: #fff;
+  height: 350px;
+  width: 450px;
 }
 
- .pricingheading {
+.pricingheading {
+  align-items: center;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  background-color: blue;
   width: 900px;
-  height: 100px;
-  color: #fff;
- }
+  height: 200px;
+  background-color: blue;
+}
+
+
+/*Transportation*/
 
 #maps{
   width: 600px;
