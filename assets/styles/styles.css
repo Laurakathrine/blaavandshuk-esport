@@ -42,9 +42,6 @@ nav li {
   border: solid;
   border-color: #fff;
   padding: 6px 10px;
-  background-image: url(../images/seethrough.png);
-  /*background-color: white;
-  opacity: 0.2;*/
   border-width: thin;
 }
 
