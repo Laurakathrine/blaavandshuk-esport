@@ -40,7 +40,12 @@ nav li {
 
 .border {
   border: solid;
-  border-color: red;
+  border-color: #fff;
+  padding: 6px 10px;
+  background-image: url(../images/seethrough.png);
+  /*background-color: white;
+  opacity: 0.2;*/
+  border-width: thin;
 }
 
 #navbar ul {
@@ -100,7 +105,7 @@ input {
 }
 
 .topnav input[type=text] {
-  padding: 6px;
+  padding: 10px;
   border: none;
   font-size: 17px;
 }
@@ -133,6 +138,7 @@ input {
   margin-left: 70px;
 }
 
+
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: #298dc1;
 }
@@ -141,7 +147,7 @@ input {
   display: none;
   position: absolute;
   background-image: url(../images/landingpage2.jpg);
-  min-width: 160px;
+  width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-left: 55px;
@@ -308,7 +314,8 @@ input {
 }
 
 /*Facilities info section*/
-#facilityinfo, #facilityinfotwo, #facilityinfothree {
+#facilityinfo, #facilityinfotwo, #facilityinfothree, #facilityinfofour, #facilityinfofive, #facilityinfosix, #facilityinfoseven {
+  display: flex;
   min-height: 600px;
   width: 100%;
   background-color: #b5e8d5;
@@ -319,7 +326,6 @@ input {
 }
 
 #facilityinfo {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../images/facilities1.jpg);
@@ -328,7 +334,6 @@ input {
 }
 
 #facilityinfotwo {
-  display: flex;
   justify-content: center;
   align-items: flex-end;
   background-image: url(../images/facilities2.jpg);
@@ -336,11 +341,43 @@ input {
 }
 
 #facilityinfothree {
-  display: flex;
   justify-content: center;
   align-items: flex-start;
   /*background-image: url(../images/facilities1.jpg);*/
   background-image: url(../images/facilities3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#facilityinfofour {
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../images/esport4.jpg);
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+#facilityinfofive {
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../images/facilities6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#facilityinfosix {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  background-image: url(../images/facilities5.jpg);
+  background-size: cover;
+}
+
+
+#facilityinfoseven {
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/facilities1.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
