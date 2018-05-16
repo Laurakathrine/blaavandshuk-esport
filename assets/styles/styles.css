@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'ff-tisa-sans-web-pro';
+  font-family: "open-sans" sans-serif;
 }
 
 nav {
@@ -15,9 +15,6 @@ nav {
 nav li {
   list-style-type: none;
 }
-
-
-
 
 
 /* Link header */
@@ -52,7 +49,7 @@ nav li {
   align-items: center;
   justify-content: flex-end;
   font-size: 10pt;
-  font-family: 'ff-tisa-sans-web-pro';
+  font-family: "open-sans",sans-serif;
 }
 
 #navbar li {
@@ -129,7 +126,7 @@ input {
   color: black;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: 'ff-tisa-sans-web-pro';
+  font-family: "open-sans",sans-serif;
   margin: 0;
   text-transform: uppercase;
   margin-left: 70px;
@@ -226,7 +223,7 @@ input {
   background-image: url(../images/landingpage2.jpg);
   background-attachment: fixed;
   color: #fff;
-  font-family: 'ff-tisa-sans-web-pro';
+  font-family: "open-sans",sans-serif;
   flex-direction: column;
 }
 
@@ -291,7 +288,7 @@ input {
   height: 300px;
   width: 600px;
   /*background-color: orange;*/
-  font-family: 'amboy-inline';
+  font-family: "open-sans",sans-serif;
   flex-direction: column;
   text-transform: uppercase;
   margin-left: 75px;
@@ -302,11 +299,12 @@ input {
   font-size: 45pt;
   font-weight: 400;
   margin: 0;
+  font-weight: 800;
 }
 
 #textbox p {
   font-size: 15pt;
-  font-family: 'ff-tisa-sans-web-pro';
+  font-family: "open-sans",sans-serif;
   text-transform: uppercase;
 }
 
