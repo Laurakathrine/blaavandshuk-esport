@@ -334,6 +334,7 @@ input {
   justify-content: center;
   align-items: flex-end;
   background-image: url(../images/facilities2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -435,7 +436,7 @@ input {
 .wrapper, .wrapperprice {
   display: flex;
   height: 90vh;
-  width: 900px; 
+  width: 900px;
 }
 
 .wrapper {
@@ -481,7 +482,7 @@ input {
 /*Transportation*/
 
 #maps{
-  width: 600px;
-  height: 400px;
+  width: 900px;
+  height: 600px;
   background-color: grey;
 }
