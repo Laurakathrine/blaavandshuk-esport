@@ -317,7 +317,7 @@ input {
   flex-direction: column;
   color: #fff;
   background-color: green;
-
+  font-family: "open-sans",sans-serif;
 }
 
 #facilityinfo {
@@ -483,4 +483,8 @@ input {
   width: 900px;
   height: 600px;
   background-color: grey;
+}
+
+#transportation {
+  
 }
