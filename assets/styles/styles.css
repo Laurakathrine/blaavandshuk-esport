@@ -165,7 +165,7 @@ input {
   background-color: white;
 }
 
-/*Landingpage
+/*Landingpage*/
 .landingpage {
   display: flex;
   min-height: 100vh;
@@ -420,7 +420,7 @@ input {
 
 
 /*Pricing section*/
-.pricingsection {
+.pricingsection .transportationsection {
   display: flex;
   align-items: center;
   justify-content: center;
