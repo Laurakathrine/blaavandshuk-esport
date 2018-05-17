@@ -165,7 +165,7 @@ input {
   background-color: white;
 }
 
-/*Landingpage*/
+/*Landingpage
 .landingpage {
   display: flex;
   min-height: 100vh;
@@ -180,6 +180,7 @@ input {
   color: #fff;
 
 }
+*/
 
 /*Floating arrow*/
 
@@ -486,5 +487,5 @@ input {
 }
 
 #transportation {
-  
+
 }
