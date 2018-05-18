@@ -431,7 +431,7 @@ input {
   background-attachment: fixed;
 }
 
-.wrapper, .wrapperprice {
+.wrapper, .wrapperprice, .wrappertown {
   display: flex;
   height: 90vh;
   width: 900px;
@@ -441,12 +441,17 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: yellow;
 }
 
 .wrapperprice {
   flex-direction: row;
   justify-content: center;
+}
+
+.wrappertown {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .pricingheading {
@@ -498,18 +503,15 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /*background-image: url(../images/blur.jpg);*/
+  background-image: url(../images/facilities3.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-color: red;
   flex-direction: column;
   color: #fff;
-
 }
 
 
 #towncontent {
-  background-color: blue;
   font-family: "open-sans" sans-serif;
   width: 700px;
 }
@@ -521,3 +523,4 @@ text-transform: uppercase;
 #towncontent img {
   width: 700px;
 }
+
