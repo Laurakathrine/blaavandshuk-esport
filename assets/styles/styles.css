@@ -419,7 +419,7 @@ input {
 
 
 /*Pricing section*/
-.pricingsection .transportationsection {
+.pricingsection, .transportationsection {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,6 +435,7 @@ input {
   display: flex;
   height: 90vh;
   width: 900px;
+  background-color: yellow;
 }
 
 .wrapper {
@@ -446,6 +447,9 @@ input {
 .wrapperprice {
   flex-direction: row;
   justify-content: center;
+  height: 400px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .wrappertown {
@@ -462,12 +466,14 @@ input {
   height: 300px;
   color: #fff;
   text-transform: uppercase;
+  background-color: blue;
 }
 
 .pricing {
   height: 350px;
   width: 450px;
   color: #fff;
+  background-color: orange;
 }
 
 .pricing p {
