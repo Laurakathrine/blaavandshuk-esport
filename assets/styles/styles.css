@@ -408,10 +408,11 @@ input {
 }
 
 
-.wrapper, .wrapperprice, .wrappertown {
+.wrapper, .wrapperprice, .wrappertown, .wrapperesports {
   display: flex;
   height: 90vh;
   width: 900px;
+  background-color: yellow; 
 }
 
 .wrapper {
@@ -452,9 +453,14 @@ input {
   align-items: center;
 }
 
+.wrapperesports {
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*Pricing section*/
-.pricingsection, .transportationsection {
+.pricingsection, .transportationsection, .esportssection  {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,4 +544,33 @@ text-transform: uppercase;
   width: 700px;
   margin-top: 20px; 
 }
+
+
+/*Esport*/
+
+.esportcontent {
+  color: #fff;
+  background: orange;
+  height: 600px;
+  width: 900px;
+}
+
+.esportcontent h2 {
+  text-transform: uppercase;
+}
+
+/*.esportcontent img {
+  width: 900px;
+  height: auto;
+}*/
+
+
+
+
+
+
+
+
+
+
 
