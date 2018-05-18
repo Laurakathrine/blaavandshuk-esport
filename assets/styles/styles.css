@@ -312,12 +312,12 @@ input {
 #facilityinfo, #facilityinfotwo, #facilityinfothree, #facilityinfofour, #facilityinfofive, #facilityinfosix, #facilityinfoseven {
   display: flex;
   min-height: 600px;
-  width: 100%;
   background-color: #b5e8d5;
   flex-direction: column;
   color: #fff;
-  background-color: green;
   font-family: "open-sans",sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 #facilityinfo {
@@ -329,16 +329,12 @@ input {
 }
 
 #facilityinfotwo {
-  justify-content: center;
-  align-items: flex-end;
   background-image: url(../images/facilities2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #facilityinfothree {
-  justify-content: center;
-  align-items: flex-start;
   /*background-image: url(../images/facilities1.jpg);*/
   background-image: url(../images/facilities3.jpg);
   background-size: cover;
@@ -354,25 +350,18 @@ input {
 }
 
 #facilityinfofive {
-  justify-content: center;
-  align-items: flex-end;
   background-image: url(../images/facilities6.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 #facilityinfosix {
-  justify-content: center;
-  align-items: flex-start;
-  display: flex;
   background-image: url(../images/facilities5.jpg);
   background-size: cover;
 }
 
 
 #facilityinfoseven {
-  justify-content: center;
-  align-items: center;
   background-image: url(../images/facilities1.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -381,7 +370,7 @@ input {
 #infocontentcenter, #infocontentright, #infocontentleft {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  /*background-color: green;*/
 }
 
 #infocontentcenter h1, #infocontentright h2, #infocontentleft h2 {
@@ -402,34 +391,22 @@ input {
 
 #infocontentcenter {
   align-items: center;
-  justify-content: center;
   text-align: center;
+  width: 535px;
 }
 
 #infocontentright {
   align-items: flex-end;
-  margin-right: 200px;
   text-align: right;
+  width: 535px;
 }
 
 #infocontentleft {
   align-items: flex-start;
-  margin-left: 200px;
+  text-align: left;
+  width: 535px;
 }
 
-
-/*Pricing section*/
-.pricingsection, .transportationsection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 .wrapper, .wrapperprice, .wrappertown {
   display: flex;
@@ -454,6 +431,42 @@ input {
   justify-content: center;
   align-items: center;
 }
+
+.indexwrapperright, .indexwrapperleft, .indexwrappercenter {
+  display: flex;
+  width: 900px;
+}
+
+
+.indexwrapperright {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.indexwrapperleft {
+  align-items: flex-start;
+ }
+
+.indexwrappercenter {
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Pricing section*/
+.pricingsection, .transportationsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  background-image: url(../images/facilities3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
 
 .pricingheading {
   align-items: flex-end;
