@@ -575,10 +575,14 @@ text-transform: uppercase;
 }
 
 .esportscontent img {
+  margin-top: 50px;
   width: 900px;
   height: auto;
 }
 
+.esportscontent p {
+  margin-top: 50px;
+}
 
 footer {
   height: 50px;
