@@ -584,11 +584,12 @@ text-transform: uppercase;
   margin-top: 50px;
 }
 
-footer {
+.footer {
   position: fixed;
-  height: 50px;
-  width: 100%;
-  background-color: green;
+  height: 60px;
+    width: 100%;
+    background-color: red;
+    color: white;
 
 }
 
