@@ -450,7 +450,7 @@ input {
 
 .wrappertown {
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -522,5 +522,6 @@ text-transform: uppercase;
 
 #towncontent img {
   width: 700px;
+  margin-top: 20px; 
 }
 
