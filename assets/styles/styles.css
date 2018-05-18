@@ -180,7 +180,7 @@ input {
   color: #fff;
 
 }
-*/
+
 
 /*Floating arrow*/
 
@@ -489,3 +489,21 @@ input {
 #transportation {
 
 }
+
+/*Town*/
+
+ .town {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*background-image: url(../images/blur.jpg);*/
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: red;
+  flex-direction: column;
+  color: #fff;
+
+}
+
