@@ -533,8 +533,13 @@ input {
 
 
 #towncontent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   font-family: "open-sans" sans-serif;
-  width: 700px;
+  width: 900px;
+  height: 100vh;
 }
 
 #towncontent h2 {
@@ -542,7 +547,7 @@ text-transform: uppercase;
 }
 
 #towncontent img {
-  width: 700px;
+  width: 900px;
   margin-top: 20px; 
 }
 
