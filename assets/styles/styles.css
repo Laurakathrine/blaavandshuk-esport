@@ -27,7 +27,7 @@ nav li {
   /*background-image: url(../images/landingpage2.jpg);*/
   /*background-image: url(../images/invisible70.png);*/
   flex-direction: row;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   padding: 0;
