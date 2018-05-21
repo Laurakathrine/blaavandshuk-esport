@@ -432,7 +432,7 @@ input {
   align-items: center;
 }
 
-.indexwrapperright, .indexwrapperleft, .indexwrappercenter {
+.indexwrapperright, .indexwrapperleft, .indexwrappercenter, .wrapperbundle {
   display: flex;
   width: 900px;
 }
@@ -459,9 +459,14 @@ input {
   height: 800px; 
 }
 
+.wrapperbundle {
+  background-color: yellow;
+  height: 400px;
+  flex-direction: column;
+}
 
 /*Pricing section*/
-.pricingsection, .transportationsection, .aboutussection {
+.pricingsection, .transportationsection, .aboutussection, .bootcampsection {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,7 +485,7 @@ input {
   justify-content: flex-start;
   display: flex;
   width: 900px;
-  height: 300px;
+  height: 200px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -500,7 +505,7 @@ input {
   margin-left: -40px;
 }
 
-.buttondivpricing {
+.buttonbook {
   margin-top: 60px;
 }
 
@@ -644,5 +649,27 @@ text-transform: uppercase;
   color: #fff;
 }
 
+/*Bootcamp*/
+#bundlecontent {
+  display: flex;
+  background-color: blue;
+  width: 900px;
+  height: 200px;
+  justify-content: space-between;
+}
 
 
+.bundles {
+  background-color: orange;
+  width: 200px;
+}
+
+.bundles p {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.wrapperbundle h1 {
+  text-transform: uppercase;
+  color: #fff;
+}
