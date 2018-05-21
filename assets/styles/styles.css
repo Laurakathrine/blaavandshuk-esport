@@ -461,7 +461,7 @@ input {
 
 
 /*Pricing section*/
-.pricingsection, .transportationsection  {
+.pricingsection, .transportationsection, .aboutussection {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -608,7 +608,36 @@ text-transform: uppercase;
 
 
 
+/*About us*/
 
+.aboutussectiontwo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 200px;
+  width: 100%;
+  flex-direction: column;
+  background-image: url(../images/facilities3.jpg);
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.aboutusinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  width: 900px;
+}
+
+.aboutusul {
+  width: 300px;
+}
+
+.aboutusul li {
+  list-style-type: none;
+  color: #fff;
+}
 
 
 
