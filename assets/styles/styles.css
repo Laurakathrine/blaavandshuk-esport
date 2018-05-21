@@ -505,7 +505,7 @@ input {
   margin-left: -40px;
 }
 
-.buttonbook {
+.buttondivpricing {
   margin-top: 60px;
 }
 
@@ -667,6 +667,7 @@ text-transform: uppercase;
 .bundles p {
   margin-left: 10px;
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .wrapperbundle h1 {
