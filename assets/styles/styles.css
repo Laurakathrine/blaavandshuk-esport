@@ -267,9 +267,10 @@ input {
 
 .buttonbook {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 50px;
+  margin-left: 10px;
 }
 
 /*Textbox on landingpage*/
@@ -377,7 +378,6 @@ input {
 #infocontentcenter, #infocontentright, #infocontentleft {
   display: flex;
   flex-direction: column;
-  /*background-color: green;*/
 }
 
 #infocontentcenter h1, #infocontentright h2, #infocontentleft h2 {
@@ -388,11 +388,11 @@ input {
   font-size: 30pt;
 }
 
-#infocontentright h2, #infocontentleft h2 {
+#infocontentright h2, #infocontentleft h2, #infocontentcenter h2 {
   font-size: 25pt;
 }
 
-#infocontentright p, #infocontentleft p {
+#infocontentright p, #infocontentleft p, #infocontentcenter p {
   font-size: 15pt;
 }
 
@@ -468,7 +468,6 @@ input {
 
 .wrapperbundle {
   margin-top: 100px;
-  background-color: yellow;
   height: 400px;
   flex-direction: column;
 }
@@ -540,7 +539,6 @@ input {
   /*background-image: url(../images/facilities3.jpg);*/
   background-size: cover;
   background-attachment: fixed;
-  background-color: red;
 }
 
 .transpowrapper {
@@ -726,10 +724,33 @@ text-transform: uppercase;
   background-attachment: fixed;
 }
 
+#bootcampsectionthree {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 150px;
+  width: 100%;
+  flex-direction: column;
+  background-image: url(../images/facilities3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#bootcampsectionfour {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  background-image: url(../images/facilities3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 
 #bundlecontent {
   display: flex;
-  background-color: blue;
   width: 900px;
   height: 200px;
   justify-content: space-between;
@@ -737,7 +758,6 @@ text-transform: uppercase;
 
 
 .bundles {
-  background-color: orange;
   width: 200px;
 }
 
@@ -750,4 +770,113 @@ text-transform: uppercase;
 .wrapperbundle h1 {
   text-transform: uppercase;
   color: #fff;
+}
+
+
+/*Bootcamp form*/
+
+#form {
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+  color: #fff;
+  margin-top: 30px; 
+}
+
+#formleft, #formright {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.box, #messagebox {
+  border-radius: 0px;
+  margin-top: 5px;
+  width: 300px;
+}
+
+.box {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+#messagebox {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.submitbutton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  width: 900px;
+}
+
+/*Bootcamp loyalty*/
+#loyalty {
+  width: 900px;
+  height: 100vh;
+  color: #fff;
+}
+
+#loyalty img {
+  width: 900px;
+}
+
+/*Bootcamp slideshow*/
+#slidewrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 900px;
+  height: 100vh;
+}
+
+#accomodation {
+  color: #fff;
+  width: 900px;
+}
+
+.slides {
+  margin: 0 auto;
+  width: 900px;
+  /*height: 300px;*/
+  /*position: relative;*/
+}
+
+/* the images are positioned absolutely to stack. opacity transitions are animated. */
+.slides img { 
+  /*display: block;*/
+  position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
+  width: 900px;
+}
+
+/* the first image is the current slide. it's faded in. */
+.slides img:first-child { 
+  z-index: 2; /* frontmost */
+  opacity: 1;
+}
+
+/* the last image is the previous slide. it's behind the current slide and it's faded over. */
+.slides img:last-child {
+  z-index: 1; /* behind current slide */
+  opacity: 1;
+}
+
+#cabin {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 900px;
+  height: 800px;
+  color: #fff;
+}
+
+#cabin div {
+  width: 400px;
+  margin-bottom: 100px;
 }

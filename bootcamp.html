@@ -102,6 +102,79 @@
       </div>
     </div>
   </div>
+<div id="form">
+    <div id="formleft">
+      <label for="fname">YOUR NAME</label>
+      <input type="text" class="box" name="firstname">
+
+      <label for="lname">MOBILE</label>
+      <input type="text" class="box" name="lastname">
+
+      <label for="lname">DATES YOU WISH TO STAY</label>
+      <input type="text" class="box" name="lastname">
+
+      <label for="lname">NUMBER OF PEOPLE</label>
+      <input type="text" class="box" name="lastname">
+
+      <label for="lname">MESSAGE (OPTIONAL)</label>
+      <input type="text" id="messagebox" name="lastname">
+      
+    </div>
+    <div id="formright">
+      <label for="fname">ADDRESS AND CITY</label>
+      <input type="text" class="box" name="firstname">
+
+      <label for="lname">EMAIL</label>
+      <input type="text" class="box" name="lastname">
+
+      <label for="lname">HOURS IN THE ESPORT CENTER</label>
+      <input type="text" class="box" name="lastname">    
+    </div>
+</div>
+</section>
+<section id="bootcampsectionthree">
+  <div class="submitbutton">
+      <a class="button" href="aboutus.html">Submit request</a>
+  </div>
+  <div id="loyalty">
+      <h2>Loyalty programme</h2>
+      <p>If you've used our bootcamps four times, you will get a 50% discount on your fifth visit.
+        Additionally, you will receive a discount on a membership with the Riptides Membership Club.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="bootcampsectionfour">
+<div id="slidewrapper">
+  <div id="accomodation">
+  <h2>Accomodation</h2>
+  <p>Stay in designer cabins surrounded by nature, only 75 meters from the eSports center. The cabins include access to a kitchen and shopping less than 300 meters from the center.</p>
+</div>
+  <div class="slides">
+    <img src="assets/images/blur.jpg">
+    <img src="assets/images/counterstrike.jpg">
+    <img src="assets/images/blur.jpg">
+    <img src="assets/images/counterstrike.jpg">
+  </div>
+  <div id="cabin">
+    <div>
+      <p>Cabin - 8 people</p>
+      <p>895DKK/day</p>
+    </div>
+    <div></div>
+    <div>
+      <p>Luxury cabin - 4 people</p>
+      <p>895DKK/day</p>
+    </div>
+  </div>
+</div>
+<script>
+function nextSlide() {
+    var q = function(sel) { return document.querySelector(sel); }  
+    q(".slides").appendChild(q(".slides img:first-child"));
+}
+setInterval(nextSlide, 3000)
+</script>
 </section>
   <div class="footer">
     <div class="some">
