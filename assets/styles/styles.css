@@ -42,7 +42,7 @@ nav li {
 }
 
 #navbar ul {
-  width: 855px;
+  width: 900px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,39 +180,6 @@ input {
 
 }
 
-
-/*Floating arrow*/
-
-#arrow {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 200px;
-  width: 200px;
-}
-
-#arrow img {
-  height: 30px;
-  margin-bottom: 30px;
-  animation: float 3s ease-in-out infinite;
-  animation: float 3s ease-in-out infinite;
-  left: 0;
-  bottom: 0;
-}
-
-/*easel animation*/
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-5px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
 .landingpagescroll {
   display: flex;
   height: 400px;
@@ -280,6 +247,11 @@ input {
   background-color: #009b8a;
   border: none;
   color: #fff;
+  cursor: pointer;
+}
+
+.backbutton:hover {
+  color: #f2b91e;
 }
 
 
