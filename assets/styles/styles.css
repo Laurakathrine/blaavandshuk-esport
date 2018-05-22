@@ -295,7 +295,9 @@ input {
   padding-bottom: 20px;
 }
 
-
+.above {
+  font-size: 15pt;
+}
 /*Textbox on landingpage*/
 #textbox {
   display: flex;
@@ -581,8 +583,8 @@ input {
 }
 
 #transportation h1 {
-  margin-top: 40px;
-  font-size: 25px;
+  /*margin-top: 40px;
+  font-size: 25px;*/
 }
 
 #transportation h2 {
