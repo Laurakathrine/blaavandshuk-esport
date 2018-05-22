@@ -45,26 +45,40 @@
          </div>
      </nav>
    </header>
-    <main>
-      <section class="transportationsection"
-      <div class="wrapper">
-        <div id="transportation">
-      <h1>TRANSPORTATION</h1>
-      <p>We're located on the west coast of Jutland at Strandvejen 2, 6840 Oksbøl with a bus stop right by our facility and Oksbøl train station less than 1km away. You can use Rejseplanen to plan your trip.</p>
-      <p><b>Esbjerg</b><br>App. 21km</p>
-        <p><b>Odense</b><br>App. 136km</p>
-          <p><b>Copenhagen</b><br>App. 260km</p>
-            <p><b>Århus</b><br>App. 134km</p>
-      <h1>LOCATION ON GOOGLE MAPS</h1>
-      <div id="maps">
+      <section class="transportationsection">
+        <div class="transpowrapper">
+          <div id="transportation">
+            <h1>TRANSPORTATION</h1>
+            <p>We're located on the west coast of Jutland at Strandvejen 2, 6840 Oksbøl with a bus stop right by our facility and Oksbøl train station less than 1km away. You can use Rejseplanen to plan your trip.</p>
+            <div class="transpoinfo">
+              <div class="kilometer">
+                <h3>Esbjerg</h3>
+                <p>App. 21 km</p>
+              </div>
+              <div class="kilometer">
+                <h3>Odense</h3>
+                <p>App. 136 km</p>
+              </div>
+            </div>
+            <div class="transpoinfo">
+              <div class="kilometer">
+                <h3>Århus</h3>
+                <p>App. 134 km</p>
+              </div>
+              <div class="kilometer">
+                <h3>Copenhagen</h3>
+                <p>App. 260 km</p>
+              </div>
+            </div>
+            <h2>LOCATION ON GOOGLE MAPS</h2>    
+            <div id="maps"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYk-M0vAhvlQS1Bee1-F9UTvqfQiGEgj0&callback=initMap"></script>
+            <script src="assets/javascript/maps.js"></script>
+          </div>
+          
         </div>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYk-M0vAhvlQS1Bee1-F9UTvqfQiGEgj0&callback=initMap"></script>
-    <script src="assets/javascript/maps.js">
-    </script>
-    </div>
-    </div>
-    </main>
-    <footer>
+      
+<footer>
       <div class="footer">
     <div class="some">
       <a target="_blank" href="https://www.facebook.com/groups/406294859743287/about/">
@@ -87,5 +101,5 @@
       </a>
     </div>
   </div>
-    </footer>
-  </body>
+</footer>
+</body>
