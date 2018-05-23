@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;}
+  font-family: 'open-sans', sans-serif;}
 
 header li {
   list-style-type: none;
@@ -13,6 +13,9 @@ header {
   align-items: center;
   height: 60px;
   width: 100%;
+  position:absolute;
+  left: 0;
+  right: 0;
 }
 
 
@@ -215,6 +218,20 @@ input {
     z-index: 2;
     display: none;
 }
+main{
+  padding-top: 60px;
+  background-image: url(../images/facilities3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 100px;
+}
+#home{
+    background-image: url(../images/blur.jpg);
+    padding-bottom: 0;
+    
+  
+}
 
 /*Landingpage*/
 .landingpage {
@@ -223,10 +240,9 @@ input {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-image: url(../images/blur.jpg);
+
   background-size: cover;
   background-attachment: fixed;
-  background-color: #b5e8d5;
   flex-direction: column;
   color: #fff;
 
@@ -292,7 +308,6 @@ input {
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  height: 50px;
   width: 900px;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -402,9 +417,12 @@ input {
   background-attachment: fixed;
 }
 
+
+
 .infocontentcenter, .infocontentright, .infocontentleft {
   display: flex;
   flex-direction: column;
+  width: 900px;
 }
 
 .infocontentcenter h1, .infocontentright h2, .infocontentleft h2 {
@@ -448,22 +466,23 @@ input {
 }
 
 
-.wrapper, .wrapperprice, .wrappertown, .wrapperesports {
+.wrapper,  .wrappertown, .wrapperesports {
   display: flex;
   height: 90vh;
   width: 900px;
 }
 
 .wrapper {
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
 .wrapperprice {
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 400px;
 }
 
 .wrappertown {
@@ -507,16 +526,45 @@ input {
 }
 
 /*Sections*/
-.pricingsection, .aboutussection, .bootcampsection {
+.pricingsection{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  
+}
+ .aboutussection, .bootcampsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  
+}
+
+/* bootcamp overlay*/
+.content-overlay{
+  bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    
+    background-color: rgba(255,255,255,0.8);
+}
+.receipt{
+  bottom: 5em;
+    left: 10em;
+    position: fixed;
+    right: 10em;
+    top: 5em;
+    background-color: white;
+    color: black;
+    padding: 2em;
 }
 
 /*Pricing section*/
@@ -525,15 +573,16 @@ input {
   justify-content: flex-start;
   display: flex;
   width: 900px;
-  height: 200px;
   color: #fff;
   text-transform: uppercase;
 }
 
+
+
 .pricing {
-  height: 350px;
   width: 450px;
   color: #fff;
+  padding-bottom: 3em;
 }
 
 .pricing p {
@@ -555,7 +604,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   background-image: url(../images/facilities3.jpg);
@@ -576,13 +625,13 @@ input {
 }
 
 .transpowrapper {
-  height: 100vh;
+  height: 100%;
   width: 900px;
 }
 
 #maps{
   width: 900px;
-  height: 400px;
+  height: 562.5px;
   background-color: grey;
   margin-bottom: 50px;
 }
@@ -608,6 +657,10 @@ input {
   width: 350px;
   height: 50px;
   margin-top: 50px;
+}
+
+.kilometer{
+  width: 80px;
 }
 
 .kilometer h3 {
@@ -636,7 +689,7 @@ input {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  font-family: "open-sans" sans-serif;
+  font-family: "open-sans", sans-serif;
   width: 900px;
   height: 100vh;
 }
@@ -654,22 +707,14 @@ text-transform: uppercase;
 /*Esport*/
 
 .esportssection {
-  display: flex;
-  height: 100vh;
-  background-color: #b5e8d5;
-  flex-direction: column;
-  color: #fff;
-  font-family: "open-sans",sans-serif;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../images/facilities3.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  
+    height: 100%;
+    width: 900px;
+  margin: 0 auto;
 }
 
 .esportscontent {
   color: #fff;
-  height: 1200px;
   width: 900px;
 }
 
@@ -681,7 +726,7 @@ text-transform: uppercase;
 .esportscontent img {
   margin-top: 50px;
   width: 900px;
-  height: auto;
+  height: 562.5px;
 }
 
 /*Footer*/
@@ -747,7 +792,7 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   background-image: url(../images/facilities3.jpg);
@@ -759,7 +804,7 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 150px;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   background-image: url(../images/facilities3.jpg);
@@ -777,6 +822,10 @@ text-transform: uppercase;
 
 }
 
+#date{
+  height: 30px;
+}
+
 .date > input[type="submit"]{
    -webkit-appearance: none;
     -moz-appearance: none;
@@ -785,7 +834,7 @@ text-transform: uppercase;
     background: #009b8a;
     color: white;
     color: white;
-    height: 29px;
+    height: 34px;
     padding: 5px 24px;
     margin-top: 5px;
     border-radius: 0;
@@ -835,7 +884,6 @@ text-transform: uppercase;
 #form {
   display: flex;
   flex-direction: row;
-  height: 700px;
   color: #fff;
   margin-top: 30px; 
 }
@@ -866,7 +914,6 @@ text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100px;
   width: 900px;
   margin-top: 50px;
 }
@@ -874,13 +921,9 @@ text-transform: uppercase;
 /*Bootcamp loyalty*/
 #loyalty {
   width: 900px;
-  height: 100vh;
   color: #fff;
 }
 
-#loyalty img {
-  width: 900px;
-}
 
 /*Bootcamp slideshow*/
 #slidewrapper {

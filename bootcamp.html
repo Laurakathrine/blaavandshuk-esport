@@ -8,8 +8,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png"/>
   </head>
   <body>
-  <section class="bootcampsection">
-   <header>
+     <header>
      <nav>
        <div id="navbar">
             <div id="logo">
@@ -46,6 +45,9 @@
          </div>
      </nav>
    </header>
+    <main>
+  <section class="bootcampsection">
+  
     <div class="above">
       <h1>BOOTCAMP</h1>
       <button class="backbutton" onclick="goBack()">Back</button>
@@ -123,7 +125,7 @@
 
       <label for="date">DATES YOU WISH TO STAY</label>
       <div class="date">
-      <input type="date" name="date" id="date" >
+      <input type="date" class="date" name="date" id="date" >
   <input type="submit"></div>
 
       <label for="numberOfPeople">NUMBER OF PEOPLE</label>
@@ -142,6 +144,11 @@
 
       <label for="hours">HOURS IN THE ESPORT CENTER</label>
       <input type="number" id="hours" class="box" name="hours">
+    </div>
+    <div class="content-overlay">
+        <div class="receipt">
+          <h1>Receipt</h1>
+        </div>
     </div>
 </div>
 </section>
@@ -183,7 +190,8 @@
     </div>
   </div>
 </section>
-  <div class="footer">
+</main>
+<footer>  <div class="footer">
     <div class="some">
       <a target="_blank" href="https://www.facebook.com/groups/406294859743287/about/">
         <img src="assets/images/facebook.png" alt="company logo">
@@ -204,8 +212,17 @@
         <img src="assets/images/instagram.png" alt="company logo">
       </a>
     </div>
-  </div>
+  </div></footer>
+
 <script src="assets/javascript/javascript.js">
 </script>
+<script src="assets/javascript/receipt.js">
+</script>
+<script type="text/javascript">function nextSlide() {
+  
+    var q = function(sel) { return document.querySelector(sel); }
+    q(".slides").appendChild(q(".slides img:first-child"));
+}
+setInterval(nextSlide, 3000);</script>
 </body>
 </html>
