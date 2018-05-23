@@ -24,8 +24,6 @@ nav li {
   justify-content: center;
   align-items: center;
   height: 60px;
-  /*background-image: url(../images/landingpage2.jpg);*/
-  /*background-image: url(../images/invisible70.png);*/
   flex-direction: row;
   position: absolute;
   top: 0;
@@ -648,6 +646,8 @@ text-transform: uppercase;
 }
 
 
+
+/*Footer*/
 .footer {
   display: flex;
   position: fixed;
