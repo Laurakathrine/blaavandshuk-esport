@@ -194,7 +194,7 @@ input {
 .landingpage {
   display: flex;
   min-height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   background-image: url(../images/blur.jpg);
@@ -204,29 +204,6 @@ input {
   flex-direction: column;
   color: #fff;
 
-}
-
-.landingpagescroll {
-  display: flex;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-size: cover;
-  background-image: url(../images/landingpage2.jpg);
-  background-attachment: fixed;
-  color: #fff;
-  font-family: "open-sans",sans-serif;
-  flex-direction: column;
-}
-
-#description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 700px;
-  font-size: 15pt;
 }
 
 /*Button*/
@@ -419,9 +396,15 @@ input {
 }
 
 #infocontentcenter {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 535px;
+  margin-top: -100px;
+  text-align: center; 
+}
+
+#infocontentcenter h3 {
+  margin-top: -10px; 
 }
 
 #infocontentright {
@@ -479,6 +462,7 @@ input {
 .indexwrappercenter {
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .wrapperesports {
