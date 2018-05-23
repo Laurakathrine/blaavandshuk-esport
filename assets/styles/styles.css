@@ -160,6 +160,10 @@ input {
   padding-right: 20px;
 }
 
+#trigger:hover {
+  color: #f2b91e;
+}
+
 .dropbtn:after{
   content:'';
    border: solid white;
