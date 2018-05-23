@@ -135,29 +135,31 @@ input {
   border: none;
   outline: none;
   color: black;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: "open-sans",sans-serif;
   margin: 0;
   text-transform: uppercase;
-  /*margin-left: 40px;*/
+  
 }
 
 .dropbtn {
   font-size: 12pt;
   border: none;
   outline: none;
-  color: black;
+  color: white;
   padding: 0;
   background-color: inherit;
   font-family: "open-sans",sans-serif;
   margin: 0;
   text-transform: uppercase;
-  height: 40px;
-  margin-left: 20px;
+  width: 118px;
+  position: relative;
 }
 
-
+.navbar-item{
+  padding: 6px 10px;
+  border: solid white 1px;
+}
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: #298dc1;
 }
@@ -168,8 +170,9 @@ input {
   background-image: url(../images/landingpage2.jpg);
   width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin-left: 55px;
+  z-index: 3;
+  margin-left: -11px;
+  margin-top: 7px;
 }
 
 .dropdown-content a {
@@ -181,13 +184,14 @@ input {
   text-align: left;
 }
 
-.dropdown-content a:hover {
-
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: white;
+#dropdown-overlay{
+  bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    display: none;
 }
 
 /*Landingpage*/
@@ -204,6 +208,19 @@ input {
   flex-direction: column;
   color: #fff;
 
+}
+
+.dropbtn:after{
+  content:'';
+   border: solid white;
+        border-width: 0 1px 1px 0;
+        
+        position:absolute;
+        margin-right: 0.3em;
+        padding: 0.3em;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transition: transform linear 300ms;
 }
 
 /*Button*/
