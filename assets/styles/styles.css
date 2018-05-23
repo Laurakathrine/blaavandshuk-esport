@@ -142,7 +142,7 @@ input {
   font-family: "open-sans",sans-serif;
   margin: 0;
   text-transform: uppercase;
-  
+
 }
 
 .dropbtn {
@@ -233,8 +233,8 @@ main{
 #home{
     background-image: url(../images/blur.jpg);
     padding-bottom: 0;
-    
-  
+
+
 }
 
 /*Landingpage*/
@@ -450,11 +450,11 @@ main{
   justify-content: center;
   align-items: center;
   margin-top: -100px;
-  text-align: center; 
+  text-align: center;
 }
 
 .infocontentcenter h3 {
-  margin-top: -10px; 
+  margin-top: -10px;
 }
 
 .infocontentright {
@@ -520,7 +520,7 @@ main{
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  height: 800px; 
+  height: 800px;
 }
 
 .wrapperbundle {
@@ -537,7 +537,7 @@ main{
   height: 100%;
   width: 100%;
   flex-direction: column;
-  
+
 }
  .aboutussection, .bootcampsection {
   display: flex;
@@ -546,7 +546,7 @@ main{
   height: 100%;
   width: 100%;
   flex-direction: column;
-  
+
 }
 
 /* bootcamp overlay*/
@@ -557,7 +557,7 @@ main{
     right: 0;
     top: 0;
     z-index: 10;
-    
+    display: none;
     background-color: rgba(255,255,255,0.8);
 }
 .receipt{
@@ -704,14 +704,14 @@ text-transform: uppercase;
 
 #towncontent img {
   width: 900px;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 
 /*Esport*/
 
 .esportssection {
-  
+
     height: 100%;
     width: 900px;
   margin: 0 auto;
@@ -771,7 +771,7 @@ text-transform: uppercase;
   flex-direction: column;
   background-image: url(../images/facilities3.jpg);
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .aboutusinfo {
@@ -826,25 +826,10 @@ text-transform: uppercase;
 
 }
 
-#date{
+#depdate, #arrdate{
   height: 30px;
 }
 
-.date > input[type="submit"]{
-   -webkit-appearance: none;
-    -moz-appearance: none;
-    background: none;
-    border: none;
-    background: #009b8a;
-    color: white;
-    color: white;
-    height: 34px;
-    padding: 5px 24px;
-    margin-top: 5px;
-    border-radius: 0;
-    font-size: 13px;;
-   
-}
 
 #bootcampsectionfour {
   display: flex;
@@ -889,7 +874,7 @@ text-transform: uppercase;
   display: flex;
   flex-direction: row;
   color: #fff;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 #formleft, #formright {
@@ -920,6 +905,12 @@ text-transform: uppercase;
   align-items: center;
   width: 900px;
   margin-top: 50px;
+  cursor: pointer;
+}
+
+textarea {
+    width: 300px;
+    margin-bottom: 2em;
 }
 
 /*Bootcamp loyalty*/
@@ -948,20 +939,20 @@ text-transform: uppercase;
 .slides {
   margin: 0 auto;
   width: 900px;
- 
+
 }
 
 /* the images are positioned absolutely to stack. opacity transitions are animated. */
-.slides img { 
+.slides img {
   position: absolute;
   transition: opacity 1s;
   opacity: 0;
   width: 900px;
-  height: auto;  
+  height: auto;
 }
 
 /* the first image is the current slide. it's faded in. */
-.slides img:first-child { 
+.slides img:first-child {
   z-index: 2; /* frontmost */
   opacity: 1;
 }
