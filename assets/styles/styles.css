@@ -3,16 +3,16 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;}
 
-nav {
-  height: 60px;
-  text-transform: uppercase;
-  color: #fff;
-  flex-direction: row;
-  color: green;
+header li {
+  list-style-type: none;
 }
 
-nav li {
-  list-style-type: none;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
 }
 
 
@@ -20,16 +20,25 @@ nav li {
   #navbar {
   display: flex;
   list-style-type: none;
-  width: 100%;
-  justify-content: center;
+  width: 900px;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
   flex-direction: row;
-  position: absolute;
-  top: 0;
+  /*top: 0;
   left: 0;
   padding: 0;
-  margin: 0;
+  margin: 0;*/
+  text-transform: uppercase;
+}
+
+#width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 900px;
+  height: 60px;
 }
 
 .border {
@@ -40,17 +49,22 @@ nav li {
 }
 
 #navbar ul {
-  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  height: 60px;
+  /*width: 900px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   font-size: 10pt;
-  font-family: "open-sans",sans-serif;
+  font-family: "open-sans",sans-serif;*/
 }
 
-#navbar li {
-  margin-left: 70px;
+#navbar li, .dropbtn {
+  margin-left: 20px;
 }
 
 #navbar a, .button a {
@@ -74,7 +88,7 @@ nav li {
 }
 
 #logo {
-  width: 45px;
+  width: 200px;
 }
 
 #logo img {
@@ -116,7 +130,7 @@ input {
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown  {
   font-size: 10pt;
   border: none;
   outline: none;
@@ -126,7 +140,21 @@ input {
   font-family: "open-sans",sans-serif;
   margin: 0;
   text-transform: uppercase;
-  margin-left: 70px;
+  /*margin-left: 40px;*/
+}
+
+.dropbtn {
+  font-size: 12pt;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0;
+  background-color: inherit;
+  font-family: "open-sans",sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+  height: 40px;
+  margin-left: 20px;
 }
 
 
@@ -290,7 +318,6 @@ input {
   position: absolute;
   height: 300px;
   width: 600px;
-  /*background-color: orange;*/
   font-family: "open-sans",sans-serif;
   flex-direction: column;
   text-transform: uppercase;
@@ -644,8 +671,6 @@ text-transform: uppercase;
   width: 900px;
   height: auto;
 }
-
-
 
 /*Footer*/
 .footer {
