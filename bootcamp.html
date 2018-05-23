@@ -9,7 +9,7 @@
   </head>
   <body>
   <section class="bootcampsection">
-    <header>
+   <header>
      <nav>
        <div id="navbar">
             <div id="logo">
@@ -21,8 +21,9 @@
            <ul>
              <li class="navbar-item"><a class="" href="index.html">Home</a></li>
              <li class="navbar-item"><div class="dropdown">
-         <button class="dropbtn" onclick="dropDown()">
+         <button class="dropbtn" id="trigger" onclick="dropDown()">
            Information
+           
          </button>
          <div class="dropdown-content" id="myDropdown">
          <a href="esports.html">What is E-sports?</a>
@@ -31,6 +32,7 @@
          <a href="transportation.html">Transportation</a>
          <a href="thetown.html">The town</a>
        </div>
+       <div id="dropdown-overlay" onclick="closeDropdown()"></div>
      </div></li>
              <li
              class="navbar-item"><a  href="aboutus.html">About us</a></li>
@@ -62,7 +64,7 @@
           <p>
           We offer pre-made bundles for your team, but you can also contact us with any special requests and we'll make sure to accomodate your needs.
           </p>
-          <img src="assets/images/esportsslider4.jpg">
+          <img alt="slider1" src="assets/images/esportsslider4.jpg">
         </div>
       </div>
 </section>
@@ -113,31 +115,33 @@
   </div>
 <div id="form">
     <div id="formleft">
-      <label for="fname">YOUR NAME</label>
-      <input type="text" class="box" name="firstname">
+      <label for="name">YOUR NAME</label>
+      <input type="text" id="name" class="box" name="name">
 
-      <label for="lname">MOBILE</label>
-      <input type="text" class="box" name="lastname">
+      <label for="mobile">MOBILE</label>
+      <input type="tel" id="mobile" class="box" name="mobile">
 
-      <label for="lname">DATES YOU WISH TO STAY</label>
-      <input type="text" class="box" name="lastname">
+      <label for="date">DATES YOU WISH TO STAY</label>
+      <div class="date">
+      <input type="date" name="date" id="date" >
+  <input type="submit"></div>
 
-      <label for="lname">NUMBER OF PEOPLE</label>
-      <input type="text" class="box" name="lastname">
+      <label for="numberOfPeople">NUMBER OF PEOPLE</label>
+      <input type="number" class="box" name="numberOfPeople" id="numberOfPeople" >
 
-      <label for="lname">MESSAGE (OPTIONAL)</label>
-      <input type="text" id="messagebox" name="lastname">
+      <label for="messagebox">MESSAGE (OPTIONAL)</label>
+      <input type="text" id="messagebox" name="message">
 
     </div>
     <div id="formright">
-      <label for="fname">ADDRESS AND CITY</label>
-      <input type="text" class="box" name="firstname">
+      <label for="address">ADDRESS AND CITY</label>
+      <input type="text" class="box" name="address" id="address">
 
-      <label for="lname">EMAIL</label>
-      <input type="text" class="box" name="lastname">
+      <label for="email">EMAIL</label>
+      <input type="email" class="box" name="email" id="email">
 
-      <label for="lname">HOURS IN THE ESPORT CENTER</label>
-      <input type="text" class="box" name="lastname">
+      <label for="hours">HOURS IN THE ESPORT CENTER</label>
+      <input type="number" id="hours" class="box" name="hours">
     </div>
 </div>
 </section>
@@ -151,20 +155,23 @@
         Additionally, you will receive a discount on a membership with the Riptides Membership Club.
       </p>
     </div>
-  </div>
+  
 </section>
 <section id="bootcampsectionfour">
-<div id="slidewrapper">
   <div id="accomodation">
   <h2>Accomodation</h2>
   <p>Stay in designer cabins surrounded by nature, only 75 meters from the eSports center. The cabins include access to a kitchen and shopping less than 300 meters from the center.</p>
 </div>
+<div id="slidewrapper">
+  
   <div class="slides">
-    <img src="assets/images/esportsslider1.jpg">
-    <img src="assets/images/esportsslider2.jpg">
-    <img src="assets/images/esportsslider3.jpg">
+    <img alt="sliderimg" src="assets/images/esportsslider1.jpg">
+    <img alt="sliderimg" src="assets/images/esportsslider2.jpg">
+    <img alt="sliderimg" src="assets/images/esportsslider3.jpg">
   </div>
-  <div id="cabin">
+  
+</div>
+<div id="cabin">
     <div>
       <p>Cabin - 8 people</p>
       <p>895DKK/day</p>
@@ -175,14 +182,6 @@
       <p>895DKK/day</p>
     </div>
   </div>
-</div>
-<script>
-function nextSlide() {
-    var q = function(sel) { return document.querySelector(sel); }
-    q(".slides").appendChild(q(".slides img:first-child"));
-}
-setInterval(nextSlide, 3000)
-</script>
 </section>
   <div class="footer">
     <div class="some">

@@ -152,8 +152,28 @@ input {
   font-family: "open-sans",sans-serif;
   margin: 0;
   text-transform: uppercase;
-  width: 118px;
+  width: 140px;
   position: relative;
+  padding-right: 20px;
+}
+
+.dropbtn:after{
+  content:'';
+   border: solid white;
+        border-width: 0 2px 2px 0;
+        position:absolute;
+        margin-right: 0.3em;
+        padding: 0.3em;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transition: all linear 300ms;
+        top: 0;
+        right: 0;
+}
+
+.dropbtn.active:after{
+  transform: rotate(-135deg);
+  top: 9px;
 }
 
 .navbar-item{
@@ -164,11 +184,13 @@ input {
   color: #298dc1;
 }
 
+
+
 .dropdown-content {
   display: none;
   position: absolute;
   background-image: url(../images/landingpage2.jpg);
-  width: 140px;
+  width: 162px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 3;
   margin-left: -11px;
@@ -210,18 +232,7 @@ input {
 
 }
 
-.dropbtn:after{
-  content:'';
-   border: solid white;
-        border-width: 0 1px 1px 0;
-        
-        position:absolute;
-        margin-right: 0.3em;
-        padding: 0.3em;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        transition: transform linear 300ms;
-}
+
 
 /*Button*/
 .button {
@@ -391,28 +402,28 @@ input {
   background-attachment: fixed;
 }
 
-#infocontentcenter, #infocontentright, #infocontentleft {
+.infocontentcenter, .infocontentright, .infocontentleft {
   display: flex;
   flex-direction: column;
 }
 
-#infocontentcenter h1, #infocontentright h2, #infocontentleft h2 {
+.infocontentcenter h1, .infocontentright h2, .infocontentleft h2 {
   text-transform: uppercase;
 }
 
-#infocontentcenter h1 {
+.infocontentcenter h1 {
   font-size: 30pt;
 }
 
-#infocontentright h2, #infocontentleft h2, #infocontentcenter h2 {
+.infocontentright h2, .infocontentleft h2, .infocontentcenter h2 {
   font-size: 25pt;
 }
 
-#infocontentright p, #infocontentleft p, #infocontentcenter p {
+.infocontentright p, .infocontentleft p, .infocontentcenter p {
   font-size: 15pt;
 }
 
-#infocontentcenter {
+.infocontentcenter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,17 +431,17 @@ input {
   text-align: center; 
 }
 
-#infocontentcenter h3 {
+.infocontentcenter h3 {
   margin-top: -10px; 
 }
 
-#infocontentright {
+.infocontentright {
   align-items: flex-end;
   text-align: right;
   width: 535px;
 }
 
-#infocontentleft {
+.infocontentleft {
   align-items: flex-start;
   text-align: left;
   width: 535px;
@@ -685,7 +696,7 @@ text-transform: uppercase;
   width: 100%;
   color: white;
   text-align: center;
-  z-index: 1;
+  z-index: 5;
 }
 
 .some {
@@ -756,11 +767,37 @@ text-transform: uppercase;
   background-attachment: fixed;
 }
 
+.date{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 300px;
+  margin-bottom: 30px;
+      border-radius: 0px;
+    margin-top: 5px;
+
+}
+
+.date > input[type="submit"]{
+   -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    background: #009b8a;
+    color: white;
+    color: white;
+    height: 29px;
+    padding: 5px 24px;
+    margin-top: 5px;
+    border-radius: 0;
+    font-size: 13px;;
+   
+}
+
 #bootcampsectionfour {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
   background-image: url(../images/facilities3.jpg);
@@ -852,7 +889,7 @@ text-transform: uppercase;
   justify-content: flex-start;
   flex-direction: column;
   width: 900px;
-  height: 100vh;
+  height: 562.5px;
 }
 
 #accomodation {
@@ -864,18 +901,16 @@ text-transform: uppercase;
 .slides {
   margin: 0 auto;
   width: 900px;
-  /*height: 300px;*/
-  /*position: relative;*/
+ 
 }
 
 /* the images are positioned absolutely to stack. opacity transitions are animated. */
 .slides img { 
-  /*display: block;*/
   position: absolute;
   transition: opacity 1s;
   opacity: 0;
   width: 900px;
-  
+  height: auto;  
 }
 
 /* the first image is the current slide. it's faded in. */
@@ -895,7 +930,6 @@ text-transform: uppercase;
   justify-content: center;
   align-items: flex-end;
   width: 900px;
-  height: 800px;
   color: #fff;
 }
 

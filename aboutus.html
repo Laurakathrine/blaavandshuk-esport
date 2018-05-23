@@ -21,8 +21,9 @@
            <ul>
              <li class="navbar-item"><a class="" href="index.html">Home</a></li>
              <li class="navbar-item"><div class="dropdown">
-         <button class="dropbtn" onclick="dropDown()">
-          Information
+         <button class="dropbtn" id="trigger" onclick="dropDown()">
+           Information
+           
          </button>
          <div class="dropdown-content" id="myDropdown">
          <a href="esports.html">What is E-sports?</a>
@@ -31,6 +32,7 @@
          <a href="transportation.html">Transportation</a>
          <a href="thetown.html">The town</a>
        </div>
+       <div id="dropdown-overlay" onclick="closeDropdown()"></div>
      </div></li>
              <li
              class="navbar-item"><a  href="aboutus.html">About us</a></li>
@@ -61,7 +63,7 @@
           <p>
           Since we have been in the business for over 20 years, we are confident that we can offer personalised and high quality service for our customers. Our team is dedicated to giving you an unforgettable experience.
           </p>
-          <img src="assets/images/counterstrike.jpg">
+          <img alt="cs" src="assets/images/counterstrike.jpg">
         </div>
       </div>
 </section>
