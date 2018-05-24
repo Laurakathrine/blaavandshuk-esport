@@ -417,8 +417,6 @@ main{
   margin-top: -10px;
 }
 
-
-
 .infocontentright h2, .infocontentleft h2, .infocontentcenter h2 {
   font-size: 25pt;
 }
@@ -681,6 +679,7 @@ main{
   font-family: "open-sans", sans-serif;
   width: 900px;
   height: 100vh;
+  color: #fff;
 }
 
 #towncontent h2 {
