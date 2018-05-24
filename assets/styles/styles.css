@@ -235,6 +235,12 @@ main{
   color: #fff;
 }
 
+#quote {
+  margin-top: -8px;
+  margin-bottom: -8px;
+  font-size: 18pt;
+}
+
 /*Button*/
 .button {
   padding: 10px 24px;
