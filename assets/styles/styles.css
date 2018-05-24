@@ -830,6 +830,10 @@ text-transform: uppercase;
   font-size: 18pt;
 }
 
+#margin {
+  padding-top: 42px;
+}
+
 #bundlecontent {
   display: flex;
   width: 900px;
