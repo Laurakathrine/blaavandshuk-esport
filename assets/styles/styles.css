@@ -39,13 +39,6 @@ header {
   height: 60px;
 }
 
-.border {
-  border: solid;
-  border-color: #fff;
-  padding: 6px 10px;
-  border-width: thin;
-}
-
 #navbar ul {
   display: flex;
   align-items: center;
