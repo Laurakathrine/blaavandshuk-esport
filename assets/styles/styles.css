@@ -183,12 +183,13 @@ input {
   top: 9px;
 }
 
+
 .navbar-item{
   padding: 6px 10px;
   border: solid white 1px;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
-  color: #298dc1;
+  color: #fff;
 }
 
 
