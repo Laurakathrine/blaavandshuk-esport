@@ -871,6 +871,7 @@ text-transform: uppercase;
 .wrapperbundle h1 {
   text-transform: uppercase;
   color: #fff;
+  padding-top: 40px;
 }
 
 
