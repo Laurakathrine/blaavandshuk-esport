@@ -67,7 +67,15 @@
           <p>
           We offer pre-made bundles for your team, but you can also contact us with any special requests and we'll make sure to accomodate your needs.
           </p>
-          <img alt="slider1" src="assets/images/esportsslider4.jpg">
+          <div id="slidewrapper">
+
+          <div class="esportslides">
+            <img alt="sliderimg" src="assets/images/esportsslider1.jpg">
+            <img alt="sliderimg" src="assets/images/esportsslider2.jpg">
+            <img alt="sliderimg" src="assets/images/esportsslider3.jpg">
+          </div>
+
+        </div>
         </div>
       </div>
 </section>
@@ -234,6 +242,15 @@
     var q = function(sel) { return document.querySelector(sel); }
     q(".slides").appendChild(q(".slides img:first-child"));
 }
-setInterval(nextSlide, 3000);</script>
+setInterval(nextSlide, 3000);
+</script>
+<script type="text/javascript">function nextSlide() {
+
+    var q = function(sel) { return document.querySelector(sel); }
+    q(".esportslides").appendChild(q(".esportslides img:first-child"));
+}
+setInterval(nextSlide, 3000);
+</script>
+
 </body>
 </html>
