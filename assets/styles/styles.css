@@ -138,6 +138,7 @@ input {
   width: 140px;
   position: relative;
   padding-right: 20px;
+  font-weight: bold;
 }
 
 #trigger:hover {
@@ -165,7 +166,11 @@ input {
 
 .navbar-item{
   padding: 6px 10px;
-  border: solid white 1px;
+  /*border: solid white 1px;*/
+}
+
+.navbar-item a {
+  font-weight: bold;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: #fff;
@@ -203,7 +208,7 @@ input {
 
 main{
   padding-top: 60px;
-  background-image: url(../images/facilities3.jpg);
+  background-image: url(../images/facilities3old.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -228,10 +233,38 @@ main{
   color: #fff;
 }
 
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 450px;
+  width: 900px;
+}
+
+.arrow img {
+  margin-bottom: 70px;
+  height: 30px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+0% {
+    transform: translatey(0px);
+}
+50% {
+    transform: translatey(-10px);
+}
+100% {
+    transform: translatey(0px);
+}
+}
+
 #quote {
   margin-top: -8px;
   margin-bottom: -8px;
-  font-size: 18pt;
+  font-size: 20pt;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /*Button*/
@@ -414,6 +447,7 @@ main{
 .infocontentstart h1 {
   font-size: 20pt;
   margin-top: -10px;
+  text-align: left;
 }
 
 .infocontentright h2, .infocontentleft h2, .infocontentcenter h2 {
@@ -498,9 +532,10 @@ main{
  }
 
 .indexwrappercenter {
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .wrapperesports {
@@ -595,7 +630,7 @@ main{
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
+  background-image: url(../images/facilities3old.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -760,7 +795,7 @@ text-transform: uppercase;
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
+  background-image: url(../images/facilities3old.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -795,7 +830,7 @@ text-transform: uppercase;
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
+  background-image: url(../images/facilities3old.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -807,7 +842,7 @@ text-transform: uppercase;
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
+  background-image: url(../images/facilities3old.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -832,7 +867,7 @@ text-transform: uppercase;
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background-image: url(../images/facilities3.jpg);
+  background-image: url(../images/facilities3old.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
